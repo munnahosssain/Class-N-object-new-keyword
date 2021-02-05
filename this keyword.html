@@ -22,6 +22,11 @@
         const anotherObject = {
             name: 'Another human'
         }
+
+        setTimeout(function(){
+            console.log(this);
+        },1000)
+
         anotherObject.getFullName = myObject.getFullName;
         console.log(anotherObject.getFullName);
 
@@ -39,3 +44,5 @@
 </body>
 
 </html>
+
+<!-- https://web.programming-hero.com/course/video/web-3-25-7-how-to-understand-the-this-keyword -->
